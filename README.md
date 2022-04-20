@@ -18,7 +18,7 @@ Employee Analysis for HR Department of IBM Company
 
 ## About
 
-The original procedures uses python and jupyter for analysis which never expalained the logic for there analysis and the jupyter notebook never provieded any dashboard for clean analysis.
+The original procedures uses python and jupyter for analysis which never explained the logic for there analysis and the jupyter notebook never provieded any dashboard for clean analysis.
 
 As the dataset is not that big, so for data insights, EXCEL was used instead of SQL. But cleaning data in the excel is not reliable at all and even more time consuming than SQL.
 
