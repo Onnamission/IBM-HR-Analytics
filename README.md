@@ -1,10 +1,12 @@
+# IBM HR Analytics
+
 ![Github Repo Release](https://img.shields.io/github/release-date/Onnamission/IBM-HR-Analytics)
+![Github Repo Build](https://img.shields.io/github/workflow/status/Onnamission/IBM-HR-Analytics/ibmhr)
 ![Github Repo Size](https://img.shields.io/github/repo-size/Onnamission/IBM-HR-Analytics)
 ![Github Repo License](https://img.shields.io/github/license/Onnamission/IBM-HR-Analytics)
 ![Github Repo Maintenance](https://img.shields.io/maintenance/yes/2022)
 ![Github Repo Download](https://img.shields.io/github/downloads/Onnamission/IBM-HR-Analytics/total)
 
-# IBM HR Analytics
 Employee Analysis for HR Department of IBM Company
 
 ## Tech Stack
