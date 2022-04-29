@@ -2,10 +2,11 @@
 
 ![Github Repo Release](https://img.shields.io/github/release-date/Onnamission/IBM-HR-Analytics)
 ![Github Repo Build](https://img.shields.io/github/workflow/status/Onnamission/IBM-HR-Analytics/ibmhr)
+![Github Repo Checks](https://badgen.net/github/checks/Onnamission/IBM-HR-Analytics/main)
 ![Github Repo Size](https://img.shields.io/github/repo-size/Onnamission/IBM-HR-Analytics)
 ![Github Repo License](https://img.shields.io/github/license/Onnamission/IBM-HR-Analytics)
-![Github Repo Maintenance](https://img.shields.io/maintenance/yes/2022)
 ![Github Repo Download](https://img.shields.io/github/downloads/Onnamission/IBM-HR-Analytics/total)
+![Github Repo Star Req](https://img.shields.io/badge/%F0%9F%8C%9F-If%20Useful-BC4E99)
 
 Employee Analysis for HR Department of IBM Company
 
@@ -33,7 +34,7 @@ Now here comes the role on R where you just need to define a function in a pipli
 
 ## Data Pipeline in R
 
-```bash
+```r
   data_clean = df %>%
     drop_na()
 ```
@@ -96,63 +97,63 @@ In the dataset, the coversion of paraemters - Education, EnvironmentSatisfaction
 
 For Education
 
-```bash
+```r
   dataclean$education[dataclean$education == 5] = "Doctor"
 ```
 
 For EnvironmentSatisfaction
 
-```bash
+```r
   dataclean$environment_satisfaction[dataclean$environment_satisfaction == 4] = "Very High"
 ```
 
 For JobInvolvement
 
-```bash
+```r
   dataclean$job_involvement[dataclean$job_involvement == 4] = "Very High"
 ```
 
 For JobSatisfaction
 
-```bash
+```r
   dataclean$job_satisfaction[dataclean$job_satisfaction == 4] = "Very High"
 ```
 
 For PerformanceRating
 
-```bash
+```r
   dataclean$performance_rating[dataclean$performance_rating == 4] = "Outstanding"
 ```
 
 For RelationshipSatisfaction
 
-```bash
+```r
   dataclean$work_life_balance[dataclean$work_life_balance == 4] = "Best"
 ```
 
 For WorkLifeBalance
 
-```bash
+```r
   dataclean$relationship_satisfaction[dataclean$relationship_satisfaction == 4] = "Very High"
 ```
 
 Further, for employees age and over18 columns, the over18 column has Y (Yes) as input for those who are 18 yrs of age. Then converted Y to 1 and N to 0 for count.
 
-```bash
+```r
   dataclean$over18[dataclean$age == 18] = "N"
   dataclean$over18[dataclean$over18 == "Y"] = 1
 ```
 
 Converted overtime and attrition from (Yes, No) to (1, 0). 
 
-```bash
+```r
   dataclean$over_time[dataclean$over_time == "Yes"] = 1
   dataclean$attrition[dataclean$attrition == "Yes"] = 1
 ```
 
 Removing unnecessary columns and cleaning at the end if some NAs left.
 
-```bash
+```r
   subset(dataclean, select = -c(daily_rate, 
                                 hourly_rate, 
                                 monthly_rate, 
@@ -173,7 +174,7 @@ Created 3 new parameter that are:
 
 Wanted to count total number of males and females, so created separated column for it as it makes logic.
 
-```bash
+```r
   dataclean$male = c(dataclean$gender)
   dataclean$male[dataclean$male == "Male"] = 1
   dataclean$female = c(dataclean$gender)
@@ -182,7 +183,7 @@ Wanted to count total number of males and females, so created separated column f
 
 Also, Wanted to show attrition in graph but numbers dosen't look good in x-axis. So created new column for attrition as attrition_str.
 
-```bash
+```r
   dataclean$attrition_str = c(dataclean$attrition)
   dataclean$attrition_str[dataclean$attrition_str == 1] = "Yes"
 ```
